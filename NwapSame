@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+
+
+using namespace std;
+
+
+
+int main()
+{
+	
+	string ime; // ime = name
+	string prezime; // prezime = lastname
+	while (ime != "0" && prezime != "0")
+	{
+		cout << "Unesite ime:" << endl;
+		cin >> ime;
+		cout << "Unesite prezime:" << endl;
+		cin >> prezime;
+
+		swap(ime[0], prezime[0]);
+
+		cout << endl << ime << "  " << prezime << endl;
+	}
+
+}
